@@ -18,7 +18,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 90px 50px 120px;
+  grid-template-columns: 1fr 1fr 2fr;
 }
 
 .grid-item {
