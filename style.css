@@ -19,7 +19,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 100px 1em;
+  grid-gap: 2rem;
 }
 
 .grid-item {
