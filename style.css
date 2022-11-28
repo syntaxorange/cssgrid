@@ -18,6 +18,7 @@ body {
 
 .grid {
   display: grid;
+  grid-template-rows: 50px 100px;
 }
 
 .grid-item {
@@ -26,6 +27,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 5px;
   color: #ffffff;
   border: 1px solid #ffff;
   border-radius: 2px;
