@@ -19,7 +19,7 @@ body {
 .grid {
   display: grid;
   grid-template-rows: repeat(3, 100%);
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-item {
@@ -36,9 +36,7 @@ body {
 }
 
 .grid-item-one {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-row: 2;
+  grid-column: 3 / 4;
   background-color: teal;
 }
