@@ -18,8 +18,8 @@ body {
 
 .grid {
   display: grid;
-  grid-template-rows: repeat(4, 25%);
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: [row-1-start] 1fr [row-2-start] 1fr [row-2-end];
+  grid-template-columns: [col-1-start] 1fr [col-2-start] 1fr [col-3-start] 1fr [col-3-end];
   height: 100%;
 }
 
