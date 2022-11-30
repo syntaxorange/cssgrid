@@ -37,9 +37,7 @@ body {
 }
 
 .grid-item-one {
-  grid-row-start: row-2-start;
-  grid-row-end: row-end;
-  grid-column-start: col-2-start;
-  grid-column-end: col-end;
+  grid-row: row-2-start / row-end;
+  grid-column: col-2-start / col-end;
   background-color: teal;
 }
