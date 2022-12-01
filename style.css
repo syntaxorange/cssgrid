@@ -18,8 +18,11 @@ body {
 
 .grid {
   display: grid;
-  grid-template-rows: repeat(3, [row-start] 1fr [row-end]);
-  grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+  grid-template-areas: "header header"
+                       "content sidebar"
+                       "footer footer";
+  grid-template-rows: 150px 1fr 100px;
+  grid-template-columns: 1fr 200px;
   height: 100%;
 }
 
@@ -37,7 +40,5 @@ body {
 }
 
 .grid-item-one {
-  grid-row: row-start 2 / row-end 3;
-  grid-column: col-start / col-start 3;
   background-color: teal;
 }
