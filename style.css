@@ -47,6 +47,15 @@ body {
   background-color: teal;
 }
 
+.grid-item-two {
+  grid-area: content;
+}
+
+.grid-item-three {
+  grid-area: sidebar;
+  background-color: #ff5722;
+}
+
 .grid-item-four {
   grid-row: footer;
   grid-column: footer;
