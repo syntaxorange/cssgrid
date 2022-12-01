@@ -18,11 +18,9 @@ body {
 
 .grid {
   display: grid;
-  grid-template-areas: "header header"
-                       "content sidebar"
-                       "footer footer";
-  grid-template-rows: 150px 1fr 100px;
-  grid-template-columns: 1fr 200px;
+  grid-template-rows: 70px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 140px;
   height: 100%;
 }
 
@@ -39,25 +37,10 @@ body {
   background-color: #e91e63;
 }
 
-.grid-item-one {
-  grid-row-start: header;
-  grid-row-end: header;
-  grid-column-start: header;
-  grid-column-end: header;
+.grid-item-three {
   background-color: teal;
 }
 
-.grid-item-two {
-  grid-area: content;
-}
-
-.grid-item-three {
-  grid-area: sidebar;
-  background-color: #ff5722;
-}
-
 .grid-item-four {
-  grid-row: footer;
-  grid-column: footer;
-  background-color: #9c27b0;
+  background-color: teal;
 }
