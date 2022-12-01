@@ -46,3 +46,9 @@ body {
   grid-column-end: header;
   background-color: teal;
 }
+
+.grid-item-four {
+  grid-row: footer;
+  grid-column: footer;
+  background-color: #9c27b0;
+}
