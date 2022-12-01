@@ -18,9 +18,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-rows: 70px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 140px;
+  grid-auto-flow: row;
   height: 100%;
 }
 
@@ -35,12 +33,4 @@ body {
   border: 1px solid #ffff;
   border-radius: 2px;
   background-color: #e91e63;
-}
-
-.grid-item-three {
-  background-color: teal;
-}
-
-.grid-item-four {
-  background-color: teal;
 }
