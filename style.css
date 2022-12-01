@@ -40,5 +40,9 @@ body {
 }
 
 .grid-item-one {
+  grid-row-start: header;
+  grid-row-end: header;
+  grid-column-start: header;
+  grid-column-end: header;
   background-color: teal;
 }
