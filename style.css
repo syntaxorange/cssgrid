@@ -18,9 +18,8 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 30px 60px;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+  grid-template-rows: [outer-start] 1fr [inner-start] 1fr [inner-end] 1fr [outer-end];
+  grid-template-columns: [outer-start] 1fr [inner-start] 1fr [inner-end] 1fr [outer-end];
   height: 100%;
 }
 
@@ -37,14 +36,7 @@ body {
   background-color: #e91e63;
 }
 
-.grid-item-three {
-  background-color: #009688;
-}
-
-.grid-item-four {
-  background-color: #009688;
-}
-
-.grid-item-five {
+.grid-item-one {
+  grid-area: inner;
   background-color: #009688;
 }
