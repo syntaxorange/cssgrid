@@ -18,8 +18,11 @@ body {
 
 .grid {
   display: grid;
-  grid-template-rows: [outer-start] 1fr [inner-start] 1fr [inner-end] 1fr [outer-end];
-  grid-template-columns: [outer-start] 1fr [inner-start] 1fr [inner-end] 1fr [outer-end];
+  grid-template-areas: "header header"
+                       "content sidebar"
+                       "footer footer";
+  grid-template-rows: 80px 1fr 40px;
+  grid-template-columns: 1fr 200px;
   height: 100%;
 }
 
@@ -37,6 +40,22 @@ body {
 }
 
 .grid-item-one {
-  grid-area: inner;
+  grid-row-start: header-start;
+  grid-row-end: content-start;
+  grid-column-start: footer-start;
+  grid-column-end: sidebar-end;
   background-color: #009688;
+}
+
+.grid-item-two {
+  grid-area: content;
+}
+
+.grid-item-three {
+  grid-area: sidebar;
+}
+
+.grid-item-four {
+  grid-row: footer;
+  grid-column: footer;
 }
